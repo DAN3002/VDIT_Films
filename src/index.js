@@ -1,11 +1,15 @@
 import express from 'express';
-// import functions from 'firebase-functions';
+import ejs from 'ejs';
+
+import * as functions from 'firebase-functions';
+
+import { firebaseSetup } from './startup';
+import { filmsRouter } from './routers';
+
 const app = express();
+firebaseSetup();
 
-app.get('/', (req, res) => {
-  res.send('Hello Worldasds!');
-});
+app.set('view engine', 'ejs');
+app.use(filmsRouter);
 
-app.listen(3000, () => {
-  console.log('Example app listening on port 3000!');
-});
+exports.app = functions.https.onRequest(app);
