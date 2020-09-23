@@ -1,7 +1,7 @@
 {
   "firestore": {
-    "rules": "./firebase_configs/firestore.rules",
-    "indexes": "./firebase_configs/firestore.indexes.json"
+    "indexes": "./firebase_configs/firestore.indexes.json",
+    "rules": "./firebase_configs/firestore.rules"
   },
   "functions": {
     "predeploy": [
@@ -15,11 +15,9 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
+    "rewrites": [{
+      "source": "**",
+      "function": "app"
+   }]
   }
 }
