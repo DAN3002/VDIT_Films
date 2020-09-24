@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel ./src -d ./functions --copy-files",
-    "run": "npm run build && firebase serve",
-    "start": "nodemon --exec \"npm run run\" --watch src"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -20,13 +18,15 @@
     "url": "https://github.com/DAN3002/VDIT_Films/issues"
   },
   "devDependencies": {
-    "@babel/cli": "^7.11.6",
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
     "nodemon": "^1.19.2"
   },
   "homepage": "https://github.com/DAN3002/VDIT_Films#readme",
   "dependencies": {
-    "firebase-tools": "^8.11.0"
+    "babel-preset-env": "^1.7.0",
+    "cheerio": "^1.0.0-rc.3",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.10.0",
+    "request": "^2.88.2"
   }
 }
