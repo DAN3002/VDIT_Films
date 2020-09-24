@@ -1,5 +1,4 @@
 const express = require('express');
-const functions =  require('firebase-functions');
 const path = require('path');
 
 const firebaseSetup = require('./startup/firebaseSetup');
