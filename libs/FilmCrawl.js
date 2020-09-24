@@ -1,4 +1,4 @@
-import Crawl from './Crawl';
+const Crawl = require('./Crawl.js');
 
 const FilmCrawl = {
 	async getFilmFromName(name) {
@@ -32,4 +32,4 @@ const FilmCrawl = {
 	}
 }
 
-export default FilmCrawl;
+module.exports = FilmCrawl;
