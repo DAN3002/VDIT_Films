@@ -2,8 +2,6 @@
 
 var _express = _interopRequireDefault(require("express"));
 
-var _ejs = _interopRequireDefault(require("ejs"));
-
 var functions = _interopRequireWildcard(require("firebase-functions"));
 
 var _startup = require("./startup");

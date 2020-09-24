@@ -1,6 +1,4 @@
 import express from 'express';
-import ejs from 'ejs';
-
 import * as functions from 'firebase-functions';
 
 import { firebaseSetup } from './startup';
