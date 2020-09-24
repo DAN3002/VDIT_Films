@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>VDIT Films</title>
+	<link rel="stylesheet" href="./styles/search.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="topnav center">
+			<input id = "search" type="text" placeholder="Search.." value="<%= search %>">
+			<button class="button">Search</button>
+		</div>
+		<div class="movies">
+			<% list.forEach(function(film) {%>
+				<%- include('film', {film:film}); %>
+			<% }); %>
+		</div>
+	</div>
+	<script>
+		$('button').click(() => {
+			const search = $('#search').val();
+			window.location.href = '/' + search;
+		})
+	</script>
+</body>
+
+</html>

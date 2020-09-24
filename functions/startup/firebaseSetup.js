@@ -16,8 +16,6 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function firebaseSetup() {
-  console.log('firebaseSetup');
-
   _firebaseAdmin.default.initializeApp({
     credential: _firebaseAdmin.default.credential.cert(serviceAccount),
     databaseURL: "https://vdit-films.firebaseio.com"
