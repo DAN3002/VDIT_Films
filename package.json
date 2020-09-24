@@ -23,18 +23,10 @@
   "homepage": "https://github.com/DAN3002/VDIT_Films#readme",
   "dependencies": {
     "babel-preset-env": "^1.7.0",
-<<<<<<< HEAD
-=======
-    "firebase-tools": "^8.11.0",
->>>>>>> 32f9538361f0270701c987979cbcc163d771bc36
     "cheerio": "^1.0.0-rc.3",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "firebase-admin": "^8.10.0",
-<<<<<<< HEAD
-=======
-    "firebase-functions": "^3.11.0",
->>>>>>> 32f9538361f0270701c987979cbcc163d771bc36
     "request": "^2.88.2"
   }
 }
