@@ -11,6 +11,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
+	<div hidden data-id="<%= id %>" id = "id"></div>
 	<div class="wrapper">
 		<main class="content">
 			<div class="single">
@@ -28,7 +29,7 @@
 
 				<section class="comments">
 					<h3>Comments</h3>
-					<%- include('comment') %>
+					<%- include('comment', {comments:comments}) %>
 				</section>
 			</div>
 		</main>
