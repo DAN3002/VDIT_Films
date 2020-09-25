@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title><%= title %></title>
+
+	<link rel="stylesheet" href="../styles/swiper.min.css">
+	<link rel="stylesheet" href="../styles/styles.css">
+	<link rel="stylesheet" href="../styles/film.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<main class="content">
+			<div class="single">
+				<section class="movie">
+					<img src="<%= image %>">
+					<ul>
+						<li><%= title %></li>
+						<li><%= contentHTML %></li>
+					</ul>
+					<div>
+						<a class="button" href="http://www.phimmoizz.net/phim/<%= id %>/xem-phim.html" target="blank">Watch</a>
+						<a class="button" href="http://www.phimmoizz.net/phim/<%= id %>/trailer.html" target="blank">Trailer</a>
+					</div>
+				</section>
+
+				<section class="comments">
+					<h3>Comments</h3>
+					<%- include('comment') %>
+				</section>
+			</div>
+		</main>
+	</div>
+</body>
+</html>
