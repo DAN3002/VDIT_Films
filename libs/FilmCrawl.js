@@ -29,6 +29,18 @@ const FilmCrawl = {
 		}
 
 		return out;
+	},
+	async getFilmData(id) {
+		const url = `http://www.phimmoizz.net/phim/${id}/`;
+		const $ = await Crawl.parseDOMFromURL(url);
+
+		const image = $('.movie-l-img img').attr('src');
+		const title = $('h1.movie-title a.title-1').text();
+		const contentHTML = $('#film-content').text();
+
+		return {
+			image, title, contentHTML, id
+		}
 	}
 }
 
